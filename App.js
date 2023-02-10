@@ -3,13 +3,21 @@ import { StyleSheet, Text, View } from 'react-native';
 import Botao from './components/Botao';
 
 export default function App() {
+  function logando(){
+    alert("Logando...")
+  }
+
+  function deslogando(){
+    alert("Deslogando...")
+  }
+
   return (
     <View style={styles.container}>
       <StatusBar style="auto" />
-      <Botao bg='warn'>
+      <Botao icon="login" onPress={logando}>
           Acessar
       </Botao>
-      <Botao bg="secondary">
+      <Botao type="secondary" icon="logout" onPress={deslogando}>
           Logout
       </Botao>
     </View>

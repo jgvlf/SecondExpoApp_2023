@@ -9,6 +9,7 @@ export default {
 
     text:{
         secondary: '#000',
+        primary: '#fff',
     }
     
 }
